@@ -356,8 +356,9 @@ public abstract class MinecraftServer implements Runnable, ICommandSender, IThre
         int l = 625;
         int i1 = 0;
         this.setUserMessage("menu.generatingTerrain");
-        int j1 = 0;
-        logger.info("Preparing start region for level " + j1);
+        logger.info("Preparing start region for level " + 0);
+
+        /*
         WorldServer worldserver = this.worldServers[j1];
         BlockPos blockpos = worldserver.getSpawnPoint();
         long k1 = getCurrentTimeMillis();
@@ -378,6 +379,7 @@ public abstract class MinecraftServer implements Runnable, ICommandSender, IThre
                 worldserver.theChunkProviderServer.loadChunk(blockpos.getX() + l1 >> 4, blockpos.getZ() + i2 >> 4);
             }
         }
+        */
 
         this.clearCurrentTask();
     }
